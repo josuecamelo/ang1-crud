@@ -3,25 +3,18 @@
  */
 angular
     .module('app')
-    .service('MathService', function(MathFactory) {
-        var data = {};
+    .service('ContactService', function() {
+        var list = [];
 
-        this.getData = function() {
-          return data;
+        this.getList = function() {
+            return list;
         };
 
-        this.setData = function(_data) {
-          data = _data;
+        this.setList = function(_list) {
+            list = _list;
         };
 
-        this.sumService = MathFactory.sum;
-        this.subService = MathFactory.sub;
-
-        this.sumService2 = function(num1, num2) {
-          return MathFactory.sum(num1, num2);
+        this.push = function(contact) {
+            list.push(contact);
         };
-
-        this.subService2 = function(num1, num2) {
-          return MathFactory.sub(num1, num2);
-        }
     });

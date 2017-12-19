@@ -2,7 +2,7 @@ angular
   .module('app')
   .component('app', {
     templateUrl: 'app/hello.html',
-    controller: function () {
+    controller: function (ContactFactory) {
         var vm = this //vm view model - para aparecer na view tem que expor ao this
 
         vm.add  = add;
@@ -27,7 +27,7 @@ angular
             ContactFactory.add(contact);
         }
 
-        function edit(contact, indexList) {
+        /*function edit(contact, indexList) {
             if (!contact) {
                 alert('You must need a valid contact');
                 return;
@@ -55,8 +55,6 @@ angular
                 telephone: '',
                 email    : ''
             };
-        }
-
-
+        }*/
     }
   });

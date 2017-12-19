@@ -19,7 +19,7 @@ angular
 
             vm.add  = add;
             vm.edit = edit;
-            //vm.remove = remove;
+            vm.remove = remove;
 
             (function onInit() {
                 return vm.list = ContactFactory.list();

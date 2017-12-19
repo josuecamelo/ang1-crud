@@ -2,35 +2,61 @@ angular
   .module('app')
   .component('app', {
     templateUrl: 'app/hello.html',
-    controller: function (MathFactory, MathService) { //Math Factory sendo injetado para usar globalmente
-      var vm = this //vm view model - para aparecer na view tem que expor ao this
-      vm.hello = 'Hello World Josué Camelo!';
-      vm.person = {
-          name: 'Josué',
-          last_name: 'Camelo'
-      };
+    controller: function () {
+        var vm = this //vm view model - para aparecer na view tem que expor ao this
 
-      vm.list = [{
-        name: 'Daniel',
-        lastname: 'Camelo'
-      },{
-        name: 'Josué ',
-        lastname: 'Camelo'
-      },{
-        name: 'Priscila',
-        lastname: 'Camelo'
-      }];
+        vm.add  = add;
+        vm.edit = edit;
+        vm.remove = remove;
 
-      vm.alertMe = function(){
-            alert(vm.person.name);
-      };
 
-      vm.sum = function(num1, num2){
-        return alert(MathFactory.sum(num1, num2));
-      };
+        function add(contact) {
+            if (!contact) {
+                alert('You must need a valid contact');
+                return;
+            }
 
-      vm.sub = function(num1, num2){
-          return alert(MathService.subService(num1, num2));
-      };
+            if (contact.id) {
+                clean();
+                return ContactFactory.edit(contact);
+            }
+
+            contact.id = id = id + 1;
+
+            clean();
+            ContactFactory.add(contact);
+        }
+
+        function edit(contact, indexList) {
+            if (!contact) {
+                alert('You must need a valid contact');
+                return;
+            }
+
+            vm.form.name      = contact.name;
+            vm.form.telephone = contact.telephone;
+            vm.form.email     = contact.email;
+            vm.form.id        = contact.id;
+        }
+
+        function remove(contact) {
+            if (!contact) {
+                alert('You must need a valid contact');
+                return;
+            }
+
+            return ContactFactory.remove(contact);
+        }
+
+        function clean() {
+            return vm.form = {
+                id       : 0,
+                name     : '',
+                telephone: '',
+                email    : ''
+            };
+        }
+
+
     }
   });

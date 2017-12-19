@@ -4,28 +4,51 @@
 
 angular
     .module('app')
-    .factory('MathFactory', function() {
-        var factory = {}; //criando objeto de retorno
+    .factory('ContactFactory', function(ContactService) {
+        var factory = {};
 
-        factory.sub = sub;
-        factory.sum = sum;
+        factory.add    = add;
+        factory.list   = list;
+        factory.edit   = edit;
+        factory.remove = remove;
 
-        function sub(num1, num2) {
-          return num1 - num2;
+        function add(contact) {
+            ContactService.push(contact);
+
+            console.log(ContactService.getList());
         }
 
-        function sum(num1, num2) {
-          return num1 + num2;
-        }
-
-        return factory; //ou usar no geral
-
-        /*return {
-            sub: function(num1, num2) {
-                return num1 - num2;
-            },
-            sum: function(num1, num2){
-                return num1 + num2;
-            }
+        /*function list() {
+            return ContactService.getList();
         }*/
+
+        /*function edit(contact) {
+            var list = ContactService.getList();
+            var index = null;
+            var contactOld = list.filter(function(el, pos) {
+                index = pos;
+                return el.id == contact.id;
+            });
+
+            if (index != null) {
+                return list.splice(index, 1, contact);
+            }
+        }
+
+        function remove(contact) {
+            var list = ContactService.getList();
+            var index = null;
+
+            var filter = list.filter(function(el, pos) {
+                index = pos;
+                return el.id == contact.id;
+            });
+
+            if (index != null) {
+                return list.splice(index, 1);
+            }
+
+        }*/
+
+        return factory;
     });

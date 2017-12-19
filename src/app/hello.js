@@ -31,12 +31,12 @@ angular
                     return;
                 }
 
-                /*if (contact.id) {
+                if (contact.id) { //se o id existe
                     clean();
                     return ContactFactory.edit(contact);
-                }*/
+                }
 
-                //contact.id = id = id + 1;
+                contact.id = id = id + 1;
 
                 clean();
                 ContactFactory.add(contact);

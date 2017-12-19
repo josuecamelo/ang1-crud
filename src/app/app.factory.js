@@ -11,7 +11,7 @@ angular
 
         factory.add    = add;
         factory.list   = list;
-        //factory.edit   = edit;
+        factory.edit   = edit;
         //factory.remove = remove;
 
         function add(contact) {
@@ -24,7 +24,7 @@ angular
             return ContactService.getList();
         }
 
-        /*function edit(contact) {
+        function edit(contact) {
             var list = ContactService.getList();
             var index = null;
             var contactOld = list.filter(function(el, pos) {
@@ -37,7 +37,7 @@ angular
             }
         }
 
-        function remove(contact) {
+        /*function remove(contact) {
             var list = ContactService.getList();
             var index = null;
 

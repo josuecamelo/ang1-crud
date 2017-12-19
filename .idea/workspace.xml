@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e8d28a2-2f35-4716-a8ad-5bdeaf481970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.factory.js" afterPath="$PROJECT_DIR$/src/app/app.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/hello.html" afterPath="$PROJECT_DIR$/src/app/hello.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/hello.js" afterPath="$PROJECT_DIR$/src/app/hello.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hello.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/hello.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="600">
+              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -50,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.factory.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.factory.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="390">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -83,8 +81,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/app/app.service.js" />
         <option value="$PROJECT_DIR$/src/app/hello.html" />
-        <option value="$PROJECT_DIR$/src/app/hello.js" />
         <option value="$PROJECT_DIR$/src/app/app.factory.js" />
+        <option value="$PROJECT_DIR$/src/app/hello.js" />
       </list>
     </option>
   </component>
@@ -298,7 +296,7 @@
       <updated>1513682040265</updated>
       <workItem from="1513682041715" duration="7002000" />
       <workItem from="1513689274882" duration="2147000" />
-      <workItem from="1513696431728" duration="1282000" />
+      <workItem from="1513696431728" duration="1542000" />
     </task>
     <task id="LOCAL-00001" summary="ang1 - projeto angular - projeto1">
       <created>1513682264769</created>
@@ -447,11 +445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513697490014</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Listando Contatos">
+      <created>1513697721855</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1513697721855</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10431000" />
+    <option name="totallyTimeSpent" value="10691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
@@ -492,7 +497,8 @@
     <MESSAGE value="Entendendo Componets - Só está disponivel a partir da versão 1.5" />
     <MESSAGE value="Curd Inicial" />
     <MESSAGE value="Adicionando Contato" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Contato" />
+    <MESSAGE value="Listando Contatos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listando Contatos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -580,6 +586,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -598,16 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="600">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,7 @@ angular
         templateUrl: 'app/hello.html',
         controller: function (ContactFactory) {
             var vm = this;
-            //var id = 0;
+            var id = 0;
 
             vm.hero = 'New contact';
             vm.heroList = 'List a contacts';
@@ -38,7 +38,7 @@ angular
 
                 //contact.id = id = id + 1;
 
-                //clean();
+                clean();
                 ContactFactory.add(contact);
             }
 
@@ -61,7 +61,7 @@ angular
                 }
 
                 return ContactFactory.remove(contact);
-            }
+            }*/
 
             function clean() {
                 return vm.form = {
@@ -70,6 +70,6 @@ angular
                     telephone: '',
                     email    : ''
                 };
-            }*/
+            }
         }
     });

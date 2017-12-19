@@ -12,7 +12,7 @@ angular
         factory.add    = add;
         factory.list   = list;
         factory.edit   = edit;
-        //factory.remove = remove;
+        factory.remove = remove;
 
         function add(contact) {
             ContactService.push(contact);
@@ -37,7 +37,7 @@ angular
             }
         }
 
-        /*function remove(contact) {
+        function remove(contact) {
             var list = ContactService.getList();
             var index = null;
 
@@ -50,7 +50,7 @@ angular
                 return list.splice(index, 1);
             }
 
-        }*/
+        }
 
         return factory;
     });

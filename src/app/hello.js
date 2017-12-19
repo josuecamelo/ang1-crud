@@ -54,14 +54,14 @@ angular
                 vm.form.id        = contact.id;
             }
 
-            /*function remove(contact) {
+            function remove(contact) {
                 if (!contact) {
                     alert('You must need a valid contact');
                     return;
                 }
 
                 return ContactFactory.remove(contact);
-            }*/
+            }
 
             function clean() {
                 return vm.form = {

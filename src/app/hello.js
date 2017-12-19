@@ -4,10 +4,22 @@ angular
     templateUrl: 'app/hello.html',
     controller: function (ContactFactory) {
         var vm = this //vm view model - para aparecer na view tem que expor ao this
+        var id = 0;
+
+        vm.hero = 'New contact';
+        /*vm.heroList = 'List a contacts';
+        vm.list = [];
+
+        vm.form = {
+            id       : 0,
+            name     : '',
+            telephone: '',
+            email    : ''
+        };*/
 
         vm.add  = add;
-        vm.edit = edit;
-        vm.remove = remove;
+        //vm.edit = edit;
+        //vm.remove = remove;
 
 
         function add(contact) {

@@ -1,0 +1,29 @@
+<h1>{{ $ctrl.hello }}</h1>
+<input type="text" data-ng-model="$ctrl.person.name">
+<input type="text" data-ng-model="$ctrl.person.last_name">
+<br />
+{{ $ctrl.person.name }} / {{ $ctrl.person.last_name }}
+<br />
+<input type="submit" data-ng-click="$ctrl.alertMe()" />
+
+<hr />
+<input type="number" data-ng-model="num1">
+<input type="number" data-ng-model="num2">
+
+<input type="button" data-ng-click="$ctrl.sum(num1, num2)" value="Sum" />
+<input type="button" data-ng-click="$ctrl.sub(num1, num2)" value="Sub" />
+
+
+<ul>
+    <li data-ng-repeat="item in $ctrl.list">
+        <p>{{item.name}}</p>
+        <p data-ng-bind="item.lastname"></p>
+    </li>
+</ul>
+
+<!--Chamando Directive -->
+<app-directive name="Josué" lastname="Camelo dos Santos Ferreira"></app-directive>
+<!--outra maneira de chamar a diretiva-->
+<!--<div app-directive></div>-->
+
+<hero></hero>

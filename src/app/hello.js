@@ -18,7 +18,7 @@ angular
             };
 
             vm.add  = add;
-            //vm.edit = edit;
+            vm.edit = edit;
             //vm.remove = remove;
 
             (function onInit() {
@@ -42,7 +42,7 @@ angular
                 ContactFactory.add(contact);
             }
 
-            /*function edit(contact, indexList) {
+            function edit(contact, indexList) {
                 if (!contact) {
                     alert('You must need a valid contact');
                     return;
@@ -54,7 +54,7 @@ angular
                 vm.form.id        = contact.id;
             }
 
-            function remove(contact) {
+            /*function remove(contact) {
                 if (!contact) {
                     alert('You must need a valid contact');
                     return;

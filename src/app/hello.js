@@ -21,9 +21,9 @@ angular
             //vm.edit = edit;
             //vm.remove = remove;
 
-            /*(function onInit() {
+            (function onInit() {
                 return vm.list = ContactFactory.list();
-            })();*/
+            })();
 
             function add(contact) {
                 if (!contact) {

@@ -10,7 +10,7 @@ angular
         var factory = {};
 
         factory.add    = add;
-        //factory.list   = list;
+        factory.list   = list;
         //factory.edit   = edit;
         //factory.remove = remove;
 
@@ -20,11 +20,11 @@ angular
             console.log(ContactService.getList());
         }
 
-        /*function list() {
+        function list() {
             return ContactService.getList();
         }
 
-        function edit(contact) {
+        /*function edit(contact) {
             var list = ContactService.getList();
             var index = null;
             var contactOld = list.filter(function(el, pos) {

@@ -4,7 +4,6 @@
     <list default="true" id="5e8d28a2-2f35-4716-a8ad-5bdeaf481970" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.factory.js" afterPath="$PROJECT_DIR$/src/app/app.factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/hello.js" afterPath="$PROJECT_DIR$/src/app/hello.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,17 +38,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.factory.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.factory.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/app.factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="645">
+              <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -297,7 +296,7 @@
       <updated>1513682040265</updated>
       <workItem from="1513682041715" duration="7002000" />
       <workItem from="1513689274882" duration="2147000" />
-      <workItem from="1513696431728" duration="2106000" />
+      <workItem from="1513696431728" duration="2331000" />
     </task>
     <task id="LOCAL-00001" summary="ang1 - projeto angular - projeto1">
       <created>1513682264769</created>
@@ -481,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513698492583</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Removendo Contatos">
+      <created>1513698546135</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1513698546135</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11255000" />
+    <option name="totallyTimeSpent" value="11480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
@@ -528,7 +534,8 @@
     <MESSAGE value="Adicionando Contato" />
     <MESSAGE value="Listando Contatos" />
     <MESSAGE value="Editando Contatos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editando Contatos" />
+    <MESSAGE value="Removendo Contatos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removendo Contatos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -616,6 +623,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -634,16 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="645">
+          <caret line="43" column="46" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
           <folding />
         </state>
       </provider>

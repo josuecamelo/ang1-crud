@@ -41,6 +41,7 @@ angular
             var list = ContactService.getList();
             var index = null;
 
+            //pega a posição atual do registro
             var filter = list.filter(function(el, pos) {
                 index = pos;
                 return el.id == contact.id;
